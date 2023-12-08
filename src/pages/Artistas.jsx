@@ -12,3 +12,5 @@ function Artistas() {
     </>
   );
 }
+
+export default Artistas;

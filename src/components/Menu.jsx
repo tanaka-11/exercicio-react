@@ -3,9 +3,12 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 // CSS
-// const StyledMenu = styled.nav`
-
-// `;
+const StyledMenu = styled.nav`
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
 
 function Menu() {
   return (
