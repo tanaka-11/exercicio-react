@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 // CSS
 const StyledMenu = styled.nav`
-  height: 60px;
+  height: 400px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  flex-flow: column;
 `;
 
 function Menu() {
