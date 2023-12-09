@@ -4,19 +4,48 @@ import { NavLink } from "react-router-dom";
 
 // CSS
 const StyledMenu = styled.nav`
- 
+  display: flex;
+  flex-flow: column;
+  width: 200px; // Largura do menu lateral 
+  background-color: #333; // Cor de fundo do menu lateral 
+  padding: 20px; // Espaçamento interno
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #555;
+    }
+
+    &.active {
+      background-color: #666;
+    }
+  }
 `;
 
 function Menu() {
   return (
     <>
       <StyledMenu>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/artistas">Artistas</NavLink>
-        <NavLink to="/musicas">Músicas</NavLink>
+        <NavLink exact to="/" activeClassName="active">
+          Home
+        </NavLink>
+
+        <NavLink to="/artistas" activeClassName="active">
+          Artistas
+        </NavLink>
+
+        <NavLink to="/musicas" activeClassName="active">
+          Músicas
+        </NavLink>
       </StyledMenu>
     </>
   );
 }
 
 export default Menu;
+

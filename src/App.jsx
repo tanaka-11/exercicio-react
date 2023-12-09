@@ -22,7 +22,6 @@ function App() {
           </Routes>
         </Conteudo>
 
-        {/* Rodapé vai vir AQUI*/}
       </BrowserRouter>
     </>
   );
