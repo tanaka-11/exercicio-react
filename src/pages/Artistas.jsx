@@ -3,7 +3,7 @@ function Artistas() {
     <>
       <div style={{margin:"20px"}}>
         <h2>Artistas em alta</h2>
-        <ul>
+        <ul style={{color: "black", fontWeight: "bold"}}>
           <li>Mc PH</li>
           <li>Mc Paiva</li>
           <li>Mc Kaverinha</li>

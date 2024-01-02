@@ -22,7 +22,7 @@ const StyledMenu = styled.nav`
     }
 
     &.active {
-      background-color: #666;
+      background-color: #4c679b;
     }
   }
 `;

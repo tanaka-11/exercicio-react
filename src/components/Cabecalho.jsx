@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 // CSS
 const StyledCabecalho = styled.header`
-  background-color: #4c679b;
+  background-color: #555;
   color: white;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
