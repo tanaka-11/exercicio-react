@@ -12,9 +12,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <Conteudo>
         <Cabecalho />
 
-        <Conteudo>
           <Routes>
             <Route Component={Home} exact path="/" />
             <Route Component={Artistas} path="/artistas" />

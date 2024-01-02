@@ -7,7 +7,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-flow: column;
   width: 200px; // Largura do menu lateral 
-  background-color: #333; // Cor de fundo do menu lateral 
+  background-color: #333;
   padding: 20px; // Espaçamento interno
 
   a {

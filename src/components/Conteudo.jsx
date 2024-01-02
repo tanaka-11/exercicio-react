@@ -5,18 +5,17 @@ import styled from "styled-components";
 const StyledConteudo = styled.main`
   background-color: #555;
   color: white;
+  display: flex;
+  flex-flow: wrap;
+  padding: 20px;
+  margin: 20px;
 `;
 
-const ConteudoWrapper = styled.div`
-  display: flex;
-  flex-flow: wrap column;
-  padding: 20px;
-`;
 
 function Conteudo({ children }) {
   return (
     <StyledConteudo>
-      <ConteudoWrapper>{children}</ConteudoWrapper>
+      {children}
     </StyledConteudo>
   );
 }
