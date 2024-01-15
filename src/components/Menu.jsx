@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const StyledMenu = styled.nav`
   display: flex;
   flex-flow: column;
-  width: 200px; // Largura do menu lateral 
+  width: 200px; // Largura do menu lateral
   background-color: #333;
   padding: 20px; // Espaçamento interno
 
@@ -16,6 +16,7 @@ const StyledMenu = styled.nav`
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    font-size: 20px;
 
     &:hover {
       background-color: #555;
@@ -29,23 +30,16 @@ const StyledMenu = styled.nav`
 
 function Menu() {
   return (
-    <>
-      <StyledMenu>
-        <NavLink exact to="/" activeClassName="active">
-          Home
-        </NavLink>
+    <StyledMenu>
+      <NavLink exact to="/">
+        Home
+      </NavLink>
 
-        <NavLink to="/artistas" activeClassName="active">
-          Artistas
-        </NavLink>
+      <NavLink to="/artistas">Artistas</NavLink>
 
-        <NavLink to="/musicas" activeClassName="active">
-          Músicas
-        </NavLink>
-      </StyledMenu>
-    </>
+      <NavLink to="/musicas">Músicas</NavLink>
+    </StyledMenu>
   );
 }
 
 export default Menu;
-

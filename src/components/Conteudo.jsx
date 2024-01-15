@@ -9,16 +9,17 @@ const StyledConteudo = styled.main`
   flex-flow: wrap;
   padding: 20px;
   margin: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+
+  p,
+  ul,
+  ol {
+    font-size: 20px;
+  }
 `;
 
-
 function Conteudo({ children }) {
-  return (
-    <StyledConteudo>
-      {children}
-    </StyledConteudo>
-  );
+  return <StyledConteudo>{children}</StyledConteudo>;
 }
 
 export default Conteudo;
